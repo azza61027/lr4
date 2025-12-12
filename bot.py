@@ -437,15 +437,6 @@ def main():
         dp.add_handler(CommandHandler("help", help_command))
         dp.add_error_handler(error_handler)
 
-        print("=" * 50)
-        print("Бот запущен!")
-        print("Поиск по автору теперь работает через Google Books API")
-        print("Тестируйте:")
-        print("/author Толстой")
-        print("/author Stephen King")
-        print("/find Harry Potter")
-        print("=" * 50)
-
         updater.start_polling()
         updater.idle()
 
